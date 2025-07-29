@@ -1,143 +1,83 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box; /* Consistent box sizing */
-}
-
 body {
-    font-family: 'Arial', sans-serif; /* Professional font */
-    background-color: #f8f8f8; /* Light background for better contrast */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  color: #333;
 }
 
-.main {
-    width: 100%;
-    height: 100vh;
-    position: relative;
-    background: url('path/to/your/background/image.jpg') no-repeat center center fixed; /* Background image */
-    background-size: cover;
-    display: flex; /* Flexbox for layout */
-    flex-direction: column; /* Vertical layout */
+header {
+  background-color: #0a192f;
+  color: #ffffff;
+  padding: 20px 40px;
 }
 
 .navbar {
-    width: 86%;
-    display: flex;
-    margin: auto;
-    padding: 20px 0; /* Padding for spacing */
-    align-items: center;
-    justify-content: space-between;
-    background: rgba(255, 255, 255, 0.8); /* Light background for navbar */
-    border-bottom: 2px solid rgba(230, 104, 59, 0.6); /* Subtle border for separation */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.navbar .logo {
-    width: 200px; /* Logo size */
-    cursor: pointer;
+.navbar h1 {
+  margin: 0;
 }
 
-ul {
-    margin-top: 0;
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
 }
 
-ul li {
-    list-style: none;
-    display: inline-block;
-    padding: 10px 20px; /* Increased padding for click area */
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
 }
 
-ul li a {
-    font-size: 16px;
-    font-weight: bold;
-    text-decoration: none;
-    color: darkslategray; /* Text color */
-    transition: color 0.4s ease;
-}
-
-ul li a:hover {
-    color: rgb(230, 104, 59); /* Hover effect */
-}
-
-.content {
-    display: flex; /* Flexbox for layout */
-    justify-content: space-between; /* Space between info and image */
-    align-items: center; /* Center alignment */
-    padding: 20px; /* Padding for spacing */
-    margin-top: 20px; /* Space between navbar and content */
-}
-
-.info {
-    max-width: 50%; /* Max width for info section */
-    text-align: left; /* Align text to left */
-}
-
-.info h1 {
-    font-size: 36px; /* Title size */
-    color: rgb(36, 32, 30); /* Title color */
-}
-
-.info h3 {
-    font-size: 20px; /* Subtitle size */
-    letter-spacing: 1px;
-    line-height: 30px; /* Increased line height for spacing */
-    color: darkslategray; /* Subtitle color */
-}
-
-.info span {
-    color: rgb(230, 104, 59); /* Highlighted text color */
-    font-weight: bold; /* Emphasis */
-}
-
-.info a {
-    text-decoration: none;
-    color: white;
-    background: rgb(36, 32, 30); /* Button background */
-    margin: 30px 0; /* Spacing around button */
-    padding: 12px 24px; /* Button padding */
-    border-radius: 10px; /* Rounded corners */
-    display: inline-block; /* Inline block for better button behavior */
-    transition: background 0.4s ease; /* Smooth background transition */
-}
-
-.info a:hover {
-    background: rgb(59, 174, 209); /* Hover effect on button */
-}
-
-.image {
-    width: 30%; /* Image container width */
-}
-
-.image img {
-    width: 100%; /* Full width for responsive image */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 10px; /* Rounded corners for images */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+main {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 0 20px;
 }
 
 section {
-    padding: 40px 20px; /* Spacing for sections */
-    margin: 20px 0; /* Space between sections */
-    background-color: white; /* White background for contrast */
-    border-radius: 10px; /* Rounded corners for sections */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+  margin-bottom: 40px;
 }
 
-section h2 {
-    font-size: 28px; /* Section title size */
-    color: rgb(36, 32, 30); /* Section title color */
-    margin-bottom: 20px; /* Space below title */
+h2 {
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+  color: #0a192f;
 }
 
-section p, section ul {
-    font-size: 16px; /* Font size for paragraphs and lists */
-    color: darkslategray; /* Text color */
-    line-height: 1.6; /* Line height for readability */
+ul {
+  padding-left: 20px;
 }
 
-section ul {
-    padding-left: 20px; /* Indent for list items */
+a {
+  color: #0077cc;
+  text-decoration: none;
 }
 
-section ul li {
-    margin-bottom: 10px; /* Spacing between list items */
+a:hover {
+  text-decoration: underline;
+}
+
+.download-button {
+  display: inline-block;
+  padding: 10px 15px;
+  background-color: #0077cc;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  margin-top: 10px;
+}
+
+footer {
+  background-color: #0a192f;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 60px;
 }
